@@ -2,45 +2,50 @@
 <html>
 
 <head>
-    <title> Curso de HTMLS e CSS</title>
+    <title>Curso de HTMLS e CSS</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link href="CSS/estilos.css" rel="stylesheet">
+
 </head>
-<a href="google.com">google</a>
 
 <body>
 
     <nav>
         <a href="#">Lorem Ipsum</a>
         <ul>
-            <li><a href="#sobre">SOBRE</a></li>
-            <li><a href="#servicos">SERVIÇOS</a></li>
-            <li><a href="#portifolio">PORTIFÓLIO</a></li>
-            <li><a href="#contatos">CONTATOS</a></li>
+            <li><a href="#sobre"><button class="btn sobre">SOBRE</button></a></li>
+            <li><a href="#servicos"><button class="btn servicos">SERVIÇOS</button></a></li>
+            <li><a href="#portfolio"><button class="btn portfolio">PORTFÓLIO</button></a></li>
+            <li> <a href="#contato"><button class="btn contato">CONTATO</button></a></li>
         </ul>
     </nav>
 
     <header>
         <h1>LOREM IPSUM</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis exercitationem officiis.</p>
-        <a href="#sobre">VER MAIS</a>
+        <a href="#sobre" class="botao">VER MAIS</a>
     </header>
 
     <section id="sobre">
         <h2>SOBRE</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#contatos">ENTRE EM CONTATO</a>
+        <a href="#contato" class="botao">ENTRE EM CONTATO</a>
     </section>
 
     <section id="servicos">
         <h2>SERVIÇOS</h2>
         <div>
             <img src="Aula 1 - HTML/img/configs.png" alt="configurações">
-            <h3>Fácil Integração</h3>
+            <h3 class="red">Fácil Integração</h3>
             <p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
         </div>
 
         <div>
             <img src="Aula 1 - HTML/img/hospedagem.png" alt="hospedagem">
-            <h3>Hospedagem Moderna</h3>
+            <h3 class="red">Hospedagem Moderna</h3>
             <p>Não deixe seus clientes na mão. Tenha seu site 24hrs no ar.</p>
         </div>
 
@@ -57,34 +62,24 @@
         </div>
     </section>
 
-    <section id="portifolio">
-        <h2>PORTIFÓLIO</h2>
-        <div>
-            <img src="Aula 1 - HTML/img/portfolio-1.jpg" alt="cogumelos">
-        </div>
+    <section id="portfolio">
+        <h2>PORTFÓLIO</h2>
 
-        <div>
-            <img src="Aula 1 - HTML/img/portfolio-2.jpeg" alt="plantação">
-        </div>
+        <img src="Aula 1 - HTML/img/portfolio-1.jpg" alt="cogumelos">
 
-        <div>
-            <img src="Aula 1 - HTML/img/portfolio-3.jpeg" alt="montanhas">
-        </div>
+        <img src="Aula 1 - HTML/img/portfolio-2.jpeg" alt="plantação">
 
-        <div>
-            <img src="Aula 1 - HTML/img/portfolio-4.jpg" alt="neve">
-        </div>
+        <img src="Aula 1 - HTML/img/portfolio-3.jpeg" alt="montanhas">
 
-        <div>
-            <img src="Aula 1 - HTML/img/portfolio-5.jpeg" alt="praia">
-        </div>
+        <img src="Aula 1 - HTML/img/portfolio-4.jpg" alt="neve">
 
-        <div>
-            <img src="Aula 1 - HTML/img/portfolio-6.jpeg" alt="alce">
-        </div>
+        <img src="Aula 1 - HTML/img/portfolio-5.jpeg" alt="praia">
+
+        <img src="Aula 1 - HTML/img/portfolio-6.jpeg" alt="alce">
+
     </section>
 
-    <section id="contatos">
+    <section id="contato">
         <h2>CONTATO</h2>
         <p>Entre em contato conosco.</p>
         <div>
@@ -99,7 +94,7 @@
     </section>
 
     <footer>
-        <p>Desenvolvido por Lucas Nogueira.</p>
+        <p>Desenvolvido por: Lucas Nogueira.</p>
     </footer>
 </body>
 
