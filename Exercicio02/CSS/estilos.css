@@ -1,0 +1,139 @@
+header {
+    font-family: "Roboto Slab", serif;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding: 0px 15px 0px 15px;
+    font-size: 20px;
+}
+
+#sobre.background {
+    background-image: url('../img/image-20161118-19352-186bcu6.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 80px;
+    color: white;
+}
+
+#sobre.background div {
+    background-color: black;
+    border: 0.1px solid black;
+    border-radius: 0.1px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+#sobre.background div h3 {
+    font-family: "Roboto Slab", serif;
+    color: red;
+    text-align: center;
+    background-color: black;
+    font-size: 40px;
+}
+
+#sobre.background #mirrorFashion p {
+    margin: 3%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#sobre.background #historia p {
+    margin: 3%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+form button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-bottom: 105px;
+}
+
+form button:hover {
+    opacity: 1;
+}
+
+form h2 {
+    margin-bottom: 10px;
+}
+
+#inflacao {
+	margin-top: 50px;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+table {
+    font-family: Oxygen, serif;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #dddddd;
+}
+
+td img {
+    width: 150px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}
+
+#rodapeCadastro {
+    margin-top: 150px;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+

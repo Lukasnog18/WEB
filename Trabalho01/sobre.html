@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Glock - Sobre</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="../Trabalho01/CSS/normalize.css">
+    
+    <link href="../Trabalho01/CSS/estilos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../Trabalho01/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto+Slab" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navegador" id="topnav">
+        <a href="index.html">Glock</a>
+        <a href="index.html"><i class="fas fa-home" style="font-size: 22px"></i> Página inicial</a>
+        <a href="armas.html"><i class="fas fa-crosshairs" style="font-size: 22px"></i> Armas</a>
+        <a href="contato.html"><i class="fas fa-phone" style="font-size: 22px"></i> Entre em contato</a>
+        <a class="active" href="sobre.html"><i class="fas fa-question" style="font-size: 22px"></i> Sobre</a>
+        <a href="javascript:void(0);" class="icon" onclick="funcao()"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <script>
+        function funcao() {
+            var x = document.getElementById("topnav");
+            if (x.className === "navegador") {
+                x.className += " responsive";
+            } else {
+                x.className = "navegador";
+            }
+        }
+
+    </script>
+
+    <header class="sobre">
+        <h2 class="active">SOBRE</h2>
+    </header>
+
+    <div id="sobre" class="background">
+        <div>
+            <p>Em 1984, o atual proprietário da Glock Store, Lucas Nogueira, encontrou-se ao lado de três outros funcionários do que era então conhecido como The Survival Store - um campo de tiro e uma loja de varejo. Desde o início, Lucas estava ciente das consideráveis possibilidades que surgiam com um negócio tão único. Em 1988, ele assumiu a empresa e ficou conhecido como Glock Store.
+
+            <br><br>"Aqui estou mais um dia sob o olhar sanguinário do vigia, você não sabe como é caminhar com a cabeça na mira de uma HK. Metralhadora alemã ou de Israel estraçalha ladrão que nem papel" - esta é uma frase da banda Racionais que marcou Lucas e que ele leva na cabeça até hoje, o fazendo seguir em frente com sua loja.</p>
+        </div>
+    </div>
+    
+    <footer>
+       <p><i class="fas fa-phone"></i> Telefone: <a href="tel:xx55555555">(xx) 5555 5555</a></p>
+       <p><i class="far fa-copyright"></i> 2018 Lucas Nogueira</p>
+    </footer>
+
+</body>
+
+</html>
