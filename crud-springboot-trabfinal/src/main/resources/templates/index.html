@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Glock - Sua loja de armas</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto+Slab" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navegador" id="topnav">
+        <a href="/inicio">Glock</a>
+        <a class="active" href="/inicio"><i class="fas fa-home" style="font-size: 22px"></i> Página inicial</a>
+        <a href="/produtos"><i class="fas fa-crosshairs" style="font-size: 22px"></i> Armas</a>
+        <a href="/contato"><i class="fas fa-phone" style="font-size: 22px"></i> Entre em contato</a>
+        <a href="/sobre"><i class="fas fa-question" style="font-size: 22px"></i> Sobre</a>
+        <a href="javascript:void(0);" class="icon" onclick="funcao()"><i class="fa fa-bars"></i></a>
+        <a href="/pessoa/formcadastro">Cadastre-se</a>
+    </div>
+
+    <script>
+        function funcao() {
+            var x = document.getElementById("topnav");
+            if (x.className === "navegador") {
+                x.className += " responsive";
+            } else {
+                x.className = "navegador";
+            }
+        }
+
+    </script>
+
+    <header class="home">
+        <h1>GLOCK</h1>
+        <p>A maior loja do Brasil especializada em armas de todos os tipos e tamanhos.</p>
+        <a href="/sobre" class="btn">SAIBA MAIS</a>
+    </header>
+
+    <section id="promos">
+        <h2>PROMOÇÕES DO DIA</h2>
+
+        <div>
+            <img th:src="@{/img/ak.jpg}" alt="ak" style="width:100%">
+
+            <h4><b>AK-47</b></h4>
+            <p><strong>Acompanha:</strong> Munição 7.62 e pente extendido com capacidade para 40 balas. 1 ano de garantia</p>
+            <p><strong>Por apenas R$ 5999,00</strong></p>
+            <p><a href="/carrinho" class="btn">COMPRAR</a></p>
+
+        </div>
+
+        <div>
+            <img src="img/glock.jpg" alt="glock" style="width:100%">
+
+            <h4><b>GLOCK</b></h4>
+            <p><strong>Acompanha:</strong> Munição 9mm e mira red dot. 1 ano de garantia.</p>
+            <p><strong>Por apenas R$ 2999,00</strong></p>
+
+        </div>
+
+        <div>
+            <img src="img/aug.jpg" alt="aug" style="width:100%">
+
+            <h4><b>AUG</b></h4>
+            <p><strong>Acompanha:</strong> Munição 5.56, empunhadura, lanterna e mira holográfica. 1 ano de garantia.</p>
+            <p><strong>Por apenas R$ 6999,00</strong></p>
+
+        </div>
+
+        <div>
+            <img src="img/awm.jpg" alt="awm" style="width:100%">
+
+            <h4><b>AWP</b></h4>
+            <p><strong>Acompanha:</strong> Munição MAGNUM, mira de precisão (8x). 1 ano de garantia.</p>
+            <p><strong>Por apenas R$ 8999,00</strong></p>
+
+        </div>
+
+        <div>
+            <img src="img/m1911.jpg" alt="m1911" style="width:100%">
+
+            <h4><b>COLT M1911</b></h4>
+            <p><strong>Acompanha:</strong> Munição .45 e pente extra. 1 ano de garantia.</p>
+            <p><strong>Por apenas R$ 3499,00</strong></p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p><i class="fas fa-phone"></i> Telefone: <a href="tel:xx55555555">(xx) 5555 5555</a></p>
+        <p><i class="far fa-copyright"></i> 2018 Lucas Nogueira</p>
+    </footer>
+</body>
+
+</html>

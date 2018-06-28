@@ -1,0 +1,415 @@
+/*
+GERAL
+*/
+
+body {
+    margin: 0;
+    font-family: Oxygen, sans-serif;
+    color: #4d4d4d;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+}
+
+.btn {
+    border: none;
+    border-radius: 3px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: red;
+}
+
+.active {
+    border-bottom: 9px solid red;
+}
+
+
+
+/*
+BARRA DE NAVEGAÇÃO
+*/
+
+.navegador {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navegador a {
+    float: left;
+    display: block;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Oxygen, serif;
+}
+
+.navegador a:first-child {
+    color: red;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.navegador a:hover {
+    border-bottom: 9px solid red;
+}
+
+.navegador a:first-child:hover {
+    border-bottom: 0;
+}
+
+.navegador .icon {
+    display: none;
+    padding: 20px;
+}
+
+/*
+CABEÇALHO HOME
+*/
+
+.home {
+    background-image: url('../img/img_empresa2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    height: 500px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    margin-top: 55px;
+}
+
+.home h1 {
+    margin-top: 40px;
+    font-size: 70px;
+}
+
+.home p {
+    font-size: 20px;
+    margin-bottom: 3em;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+/*
+CABEÇALHO ARMAS
+*/
+
+
+.armas {
+    font-family: "Roboto Slab", serif;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #C0C0C0;
+    padding: 25px;
+    font-size: 20px;
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+.armas .active {
+    border-bottom: 0px;
+    border-left: 5px solid red;
+}
+
+/*
+CABEÇALHO CONTATOS
+*/
+
+.contatos {
+    font-family: "Roboto Slab", serif;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #C0C0C0;
+    padding: 25px;
+    font-size: 20px;
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+.contatos .active {
+    border-bottom: 0px;
+    border-left: 5px solid red;
+}
+
+/*
+CABEÇALHO SOBRE
+*/
+
+.sobre {
+    font-family: "Roboto Slab", serif;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #C0C0C0;
+    padding: 25px;
+    font-size: 20px;
+    margin-top: 55px;
+}
+
+.sobre .active {
+    border-bottom: 0px;
+    border-left: 5px solid red;
+}
+
+/*
+SOBRE
+*/
+
+#sobre.background {
+    background-image: url('../img/img_empresa.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 100px;
+    height: 45vh;
+    color: white;
+}
+
+#sobre.background div {
+    background-color: black;
+    border: 0.1px solid black;
+    border-radius: 0.1px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+#sobre.background div p {
+    margin: 6%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*
+FORMULÁRIO
+*/
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+form button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-bottom: 105px;
+}
+
+form button:hover {
+    opacity: 1;
+}
+
+form h2 {
+    margin-bottom: 10px;
+}
+
+/*
+PRODUTOS
+*/
+
+#produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#produtos h4 {
+    text-align: center;
+}
+
+#produtos div {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 0px 22px;
+}
+
+#vermais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vermais button {
+    font-size: 25px;
+    padding: 15px;
+    width: 15%;;
+    margin: 20px;
+}
+
+/*
+PROMOÇÕES
+*/
+
+#promos h2 {
+    color: black;
+    text-align: center;
+    background-color: #C0C0C0;
+    padding: 25px;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#promos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#promos h4 {
+    text-align: center;
+}
+
+#promos div {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0px 10px;
+}
+
+/*
+RODAPÉ
+*/
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    /*
+    GERAL
+    */
+    
+    .active {
+    border-bottom: 4px solid red;
+    }
+    
+    /*
+    NAVEGAÇÃO
+    */
+    .navegador a:not(:first-child) {
+        display: none;
+    }
+    .navegador a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navegador.responsive {
+        position: relative;
+    }
+    .navegador.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navegador.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .navegador a:hover {
+    border-bottom: 4px solid red;
+    }
+
+    /*
+    CABEÇALHO
+    */
+    .home {
+        height: 250px;
+        height: 25vh;
+        justify-content: center;
+    }
+
+    .home h1 {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .home p {
+        margin-bottom: 1.5em;
+        font-size: 15px;
+        font-weight: 500;
+        text-shadow: 1px 1px black;
+    }
+    
+    /*
+    PÁGINA SOBRE
+    */
+    
+    #sobre.background{
+        height: 900px;
+        height: 55vh;
+        justify-content: center;
+    }
+    
+    #sobre.background div p {
+    margin: 6%;
+    font-weight: 700;
+    font-size: 16px;
+    }
+}
