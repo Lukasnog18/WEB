@@ -7,6 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+//import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.userdetails.UserDetails;
+
 @Entity
 //public class Pessoa implements UserDetails {
 public class Pessoa {
@@ -22,18 +25,18 @@ public class Pessoa {
 	private String senha;
 	
 	
-//	public String getLogin() {
-//		return login;
-//	}
-//	public void setLogin(String login) {
-//		this.login = login;
-//	}
-//	public String getSenha() {
-//		return senha;
-//	}
-//	public void setSenha(String senha) {
-//		this.senha = senha;
-//	}
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	public Long getId() {
 		return id;
 	}

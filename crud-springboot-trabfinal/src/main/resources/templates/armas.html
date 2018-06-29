@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <title>Glock - Armas</title>
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
 
-    <link href="css/estilos.css" rel="stylesheet">
+    <link href="/css/estilos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -24,7 +24,7 @@
     <div class="navegador" id="topnav">
         <a href="/inicio">Glock</a>
         <a href="/inicio"><i class="fas fa-home" style="font-size: 22px"></i> Página inicial</a>
-        <a class="active" href="/produtos"><i class="fas fa-crosshairs" style="font-size: 22px"></i> Armas</a>
+        <a class="active" href="/produtos/armas"><i class="fas fa-crosshairs" style="font-size: 22px"></i> Armas</a>
         <a href="/contato"><i class="fas fa-phone" style="font-size: 22px"></i> Entre em contato</a>
         <a href="/sobre"><i class="fas fa-question" style="font-size: 22px"></i> Sobre</a>
         <a href="javascript:void(0);" class="icon" onclick="funcao()"><i class="fa fa-bars"></i></a>
@@ -47,189 +47,20 @@
     </header>
 
     <section id="produtos">
-        <div>
-            <img src="img/m416.jpg" alt="m416" style="width:100%">
-
-            <h4><b>M416</b></h4>
-            <p><strong>Acompanha:</strong> Munição 5.56 e mira holográfica. 1 ano de garantia</p>
-            <p><strong>Por apenas R$ 6499,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/glock.jpg" alt="glock" style="width:100%">
-
-            <h4><b>GLOCK</b></h4>
-            <p><strong>Acompanha:</strong> Munição 9mm e mira red dot. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 2999,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/rpg.jpg" alt="RPG-7" style="width:100%">
-
-            <h4><b>RPG-7</b></h4>
-            <p><strong>Acompanha:</strong> Munição 9mm e mira red dot. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 15999,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/ak.jpg" alt="ak" style="width:100%">
-
-            <h4><b>AK-47</b></h4>
-            <p><strong>Acompanha:</strong> Munição 7.62 e pente extendido com capacidade para 40 balas. 1 ano de garantia</p>
-            <p><strong>Por apenas R$ 5999,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/aug.jpg" alt="aug" style="width:100%">
-
-            <h4><b>AUG</b></h4>
-            <p><strong>Acompanha:</strong> Munição 5.56, empunhadura, lanterna e mira holográfica. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 6999,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/five-seven.jpg" alt="five-seven" style="width:100%">
-
-            <h4><b>FIVE-SEVEN</b></h4>
-            <p><strong>Acompanha:</strong> Munição 5.7x28mm e pente PRO extendido. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 3499,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/awm.jpg" alt="awm" style="width:100%">
-
-            <h4><b>AWP</b></h4>
-            <p><strong>Acompanha:</strong> Munição MAGNUM, mira de precisão (8x). 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 9999,00</strong></p>
-        </div>
-
-        <div>
-            <img src="img/m1911.jpg" alt="m1911" style="width:100%">
-
-            <h4><b>COLT M1911</b></h4>
-            <p><strong>Acompanha:</strong> Munição .45 e pente extra. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 3299,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/deagle.jpg" alt="deagle" style="width:100%">
-
-            <h4><b>DESERT EAGLE</b></h4>
-            <p><strong>Acompanha:</strong> Munição .50. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 3799,00</strong></p>
-
-        </div>
-
-        <div>
-            <img src="img/uzi.jpg" alt="uzi" style="width:100%">
-
-            <h4><b>UZI</b></h4>
-            <p><strong>Acompanha:</strong> Munição 9mm, cano com compensado e cartuchos extras. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 2999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/kar98.jpg" alt="kar98k" style="width:100%">
-
-            <h4><b>KAR98K</b></h4>
-            <p><strong>Acompanha:</strong> Munição 7.62 e mira de precisão (4x). 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 7999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/shotgun.jpg" alt="benelli m4" style="width:100%">
-
-            <h4><b>BENELLI M4</b></h4>
-            <p><strong>Acompanha:</strong> Munição 12. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 3999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/m249.jpg" alt="m249" style="width:100%">
-
-            <h4><b><M249></M249></b></h4>
-            <p><strong>Acompanha:</strong> Munição 5.56 E bipé. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 11999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/magnum.jpg" alt="magnum" style="width:100%">
-
-            <h4><b>MAGNUM</b></h4>
-            <p><strong>Acompanha:</strong> Munição MAGNUM e dois Jet Loader. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 3999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/ump.JPG" alt="ump45" style="width:100%">
-
-            <h4><b>UMP45</b></h4>
-            <p><strong>Acompanha:</strong> Munição .45, silenciador, empunhadura, mira holográfica e pente extendido. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 3999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/parafal.jpg" alt="parafal" style="width:100%">
-
-            <h4><b>PARAFAL</b></h4>
-            <p><strong>Acompanha:</strong> Munição 7.62, disponível nas versões com e sem coronha almofada. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 7999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/scar.jpg" alt="scar-l" style="width:100%">
-
-            <h4><b>SCAR-L</b></h4>
-            <p><strong>Acompanha:</strong> Munição 5.56, mira de precisão (4x), empunhadura e cano com quebra chamas. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 6499,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/mk14.jpg" alt="mk14" style="width:100%">
-
-            <h4><b>MK14</b></h4>
-            <p><strong>Acompanha:</strong> Munição 7.62, mira de precisão (2x), empunhadura e coronha. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 11999,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/m92.jpg" alt="m92" style="width:100%">
-
-            <h4><b>BERETTA M92</b></h4>
-            <p><strong>Acompanha:</strong> Munição 9mm. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 3099,00</strong></p>
-
-        </div>
-
-        <div class="vermais">
-            <img src="img/famas.jpg" alt="famas" style="width:100%">
-
-            <h4><b>FAMAS</b></h4>
-            <p><strong>Acompanha:</strong> Munição 5.56, mira holográfica e dois pentes extras. 1 ano de garantia.</p>
-            <p><strong>Por apenas R$ 5499,00</strong></p>
-
-        </div>
+    
+    	<div th:each="produto: ${todosOsProdutos}">
+    		<img alt="" th:src="@{'/img/'+${produto.nome}+.jpg}" style="width:100%"/>
+    		<h4 th:text="${produto.nome}"><b></b></h4>
+    		<p th:text="${produto.descricao}"></p>
+    		<p th:number="${produto.valor}"><strong></strong></p>
+    	
+    	</div>
+        
     </section>
     
-    <div id="vermais">
-        <button class="btn">Ver Mais</button>
-    </div>
+<!--     <div id="vermais"> -->
+<!--         <button class="btn">Ver Mais</button> -->
+<!--     </div> -->
 
     <script>
         $(".vermais").hide();

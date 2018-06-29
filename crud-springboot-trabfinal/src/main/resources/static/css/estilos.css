@@ -266,9 +266,6 @@ PRODUTOS
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-}
-
-#produtos h4 {
     text-align: center;
 }
 
