@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Glock - Armas</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link href="/css/estilos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto+Slab" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div class="navegador" id="topnav">
+        <a href="/inicio">Glock</a>
+        <a href="/inicio"><i class="fas fa-home" style="font-size: 22px"></i> Página inicial</a>
+        <a class="active" href="/produtos/armas"><i class="fas fa-crosshairs" style="font-size: 22px"></i> Armas</a>
+        <a href="/contato"><i class="fas fa-phone" style="font-size: 22px"></i> Entre em contato</a>
+        <a href="/sobre"><i class="fas fa-question" style="font-size: 22px"></i> Sobre</a>
+        <a href="javascript:void(0);" class="icon" onclick="funcao()"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <script>
+        function funcao() {
+            var x = document.getElementById("topnav");
+            if (x.className === "navegador") {
+                x.className += " responsive";
+            } else {
+                x.className = "navegador";
+            }
+        }
+
+    </script>
+
+    <header class="armas">
+        <h2 class="active">TODOS OS PRODUTOS</h2>
+    </header>
+
+    <section id="produtos">
+    
+    	<div th:each="produto: ${todosOsProdutos}">
+    		<img alt="" th:src="@{'/img/'+${produto.nome}+.jpg}" style="width:100%"/>
+    		<h4 th:text="${produto.nome}"></h4>
+    		<p th:text="${produto.descricao}"></p>
+    		<p th:text="${produto.valor}"></p>
+    		<a th:href="@{/produtos/excluir/{id}(id = ${produto.id})}"> <button type="button" class="btn">Excluir</button> </a>
+    	</div>
+        
+    </section>]
+    
+    <div>
+    	<a href="/produtos/addProduto" class="btn">Cadastrar novo produto</a>
+    </div>
+    
+<!--     <div id="vermais"> -->
+<!--         <button class="btn">Ver Mais</button> -->
+<!--     </div> -->
+
+    <script>
+        $(".vermais").hide();
+        $("button").click(function() {
+            $(".vermais").show( "slow" );
+            $("button").hide();
+        });
+    </script>
+
+    <footer>
+        <p><i class="fas fa-phone"></i> Telefone: <a href="tel:xx55555555">(xx) 5555 5555</a></p>
+        <p><i class="far fa-copyright"></i> 2018 Lucas Nogueira</p>
+    </footer>
+</body>
+
+</html>

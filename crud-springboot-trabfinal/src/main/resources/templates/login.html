@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link href="/css/estilos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto+Slab" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+	<div class="navegador" id="topnav">
+        <a href="/inicio">Glock</a>
+        <a href="/inicio"><i class="fas fa-home" style="font-size: 22px"></i> Página inicial</a>
+        <a class="active" href="/produtos/armas"><i class="fas fa-crosshairs" style="font-size: 22px"></i> Armas</a>
+        <a href="/contato"><i class="fas fa-phone" style="font-size: 22px"></i> Entre em contato</a>
+        <a href="/sobre"><i class="fas fa-question" style="font-size: 22px"></i> Sobre</a>
+        <a href="javascript:void(0);" class="icon" onclick="funcao()"><i class="fa fa-bars"></i></a>
+    </div>
+
+
+<br><br><br><br><br><br><br><br><br><br><form method="POST" action="/pessoa/logar">
+
+Usuário: <input type="text" name="username"> 
+
+
+Senha: <input type="password" name="password"> 
+
+
+<input type="submit" value="Logar">
+
+
+
+</form>
+
+
+</body>
+</html>
